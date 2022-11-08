@@ -3,7 +3,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     p1 = list[1]
-    p2 = Villians[1]
+    p2 = Villians[0]
     if (p1 == p1) {
         basic.showString("" + (p1))
         basic.showString("Win")
@@ -13,7 +13,7 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("" + (Villians[1]))
+    basic.showString("" + (Villians[0]))
 })
 let p2 = ""
 let p1 = ""
