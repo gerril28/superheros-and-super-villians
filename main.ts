@@ -1,32 +1,33 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("" + (list[1]))
+    index = randint(0, 4)
+    basic.showString("" + (list[index]))
+    list = p1
 })
 input.onButtonPressed(Button.AB, function () {
-    p1 = list[1]
-    p2 = Villians[0]
-    if (p1 == p1) {
-        basic.showString("" + (p1))
+    if (list[p1] == list[p1]) {
+        basic.showString("" + (list[p1]))
         basic.showString("Win")
-    } else {
-        basic.showString("" + (p2))
-        basic.showString("Win")
+        p1 = randint(0, 4)
     }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("" + (Villians[0]))
+    let p2: string[] = []
+    index = randint(0, 4)
+    basic.showString("" + (Villians[index]))
+    Villians = p2
 })
-let p2 = ""
-let p1 = ""
+let p1: string[] = []
+let index = 0
 let Villians: string[] = []
 let list: string[] = []
 list = [
-"Spiderman",
 "Batman",
+"Spiderman",
 "Superman",
 "Flash",
 "Hulk"
 ]
-let Ranking_1 = [
+let Rating_1 = [
 "a",
 "b",
 "c",
@@ -39,4 +40,11 @@ Villians = [
 "Dr Doom",
 "Venom",
 "Harley Quinn"
+]
+let Rating_2 = [
+"a",
+"b",
+"c",
+"",
+""
 ]
