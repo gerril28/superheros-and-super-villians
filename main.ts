@@ -7,6 +7,7 @@ input.onButtonPressed(Button.AB, function () {
     if (list[p1] == list[p1]) {
         basic.showString("" + (list[p1]))
         basic.showString("Win")
+        p1 = randint(0, 4)
     }
 })
 input.onButtonPressed(Button.B, function () {
